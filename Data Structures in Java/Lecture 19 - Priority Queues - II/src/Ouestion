@@ -1,0 +1,198 @@
+Code - Implace Heap sort
+Send Feedback
+Given an integer array of size N. Sort this array (in decreasing order) using heap sort.
+Note: Space complexity should be O(1).
+Input Format:
+The first line of input contains an integer, that denotes the value of the size of the array or N.
+The following line contains N space separated integers, that denote the value of the elements of the array.
+Output Format :
+The first and only line of output contains array elements after sorting. The elements of the array in the output are separated by single space.
+Constraints :
+1 <= n <= 10^6
+Time Limit: 1 sec
+Sample Input 1:
+6
+2 6 8 5 4 3
+Sample Output 1:
+8 6 5 4 3 2
+================================================================================================================
+K largest Elements - Code
+Send Feedback
+You are given with an integer k and an array of integers that contain numbers in random order. Write a program to find k largest numbers from given array. You need to save them in an array and return it.
+Time complexity should be O(nlogk) and space complexity should be not more than O(k).
+Order of elements in the output is not important.
+Input Format :
+Line 1 : Size of array (n)
+Line 2 : Array elements (separated by space)
+Line 3 : Integer k
+Output Format :
+k largest elements
+Sample Input :
+13
+2 12 9 16 10 5 3 20 25 11 1 8 6
+4
+Sample Output :
+12
+16
+20
+25
+================================================================================================================
+K smallest elements
+Send Feedback
+You are given with an integer k and an array of integers that contain numbers in random order. Write a program to find k smallest numbers from given array. You need to save them in an array and return it.
+Time complexity should be O(n * logk) and space complexity should not be more than O(k).
+Note: Order of elements in the output is not important.
+Input Format :
+The first line of input contains an integer, that denotes the value of the size of the array. Let us denote it with the symbol N.
+The following line contains N space separated integers, that denote the value of the elements of the array.
+The following line contains an integer, that denotes the value of k.
+Output Format :
+The first and only line of output print k smallest elements. The elements in the output are separated by a single space.
+Constraints:
+Time Limit: 1 sec
+Sample Input 1 :
+13
+2 12 9 16 10 5 3 20 25 11 1 8 6
+4
+Sample Output 1 :
+1 2 3 5
+================================================================================================================
+Assignment
+--------------------------------------------------------------------------------------------------------------
+Check Max-Heap
+Send Feedback
+Given an array of integers, check whether it represents max-heap or not. Return true if the given array represents max-heap, else return false.
+Input Format:
+The first line of input contains an integer, that denotes the value of the size of the array. Let us denote it with the symbol N.
+The following line contains N space separated integers, that denote the value of the elements of the array.
+Output Format :
+The first and only line of output contains true if it represents max-heap and false if it is not a max-heap.
+Constraints:
+1 <= N <= 10^5
+1 <= Ai <= 10^5
+Time Limit: 1 sec
+Sample Input 1:
+8
+42 20 18 6 14 11 9 4
+Sample Output 1:
+true
+================================================================================================================
+Kth largest element
+Send Feedback
+Given an array A of random integers and an integer k, find and return the kth largest element in the array.
+Note: Try to do this question in less than O(N * logN) time.
+Input Format :
+The first line of input contains an integer, that denotes the value of the size of the array. Let us denote it with the symbol N.
+The following line contains N space separated integers, that denote the value of the elements of the array.
+The following contains an integer, that denotes the value of k.
+Output Format :
+The first and only line of output contains the kth largest element
+Constraints :
+1 <= N, Ai, k <= 10^5
+Time Limit: 1 sec
+Sample Input 1 :
+6
+9 4 8 7 11 3
+2
+Sample Output 1 :
+9
+Sample Input 2 :
+8
+2 6 10 11 13 4 1 20
+4
+Sample Output 2 :
+10
+================================================================================================================
+Merge K sorted arrays
+Send Feedback
+Given k different arrays, which are sorted individually (in ascending order). You need to merge all the given arrays such that output array should be sorted (in ascending order).
+Hint : Use Heaps.
+Input Format:
+The first line of input contains an integer, that denotes value of k.
+The following lines of input represent k sorted arrays. Each sorted array uses two lines of input. The first line contains an integer, that denotes the size of the array. The following line contains elements of the array.
+Output Format:
+The first and only line of output contains space separated elements of the merged and sorted array, as described in the task.
+Constraints:
+0 <= k <= 1000
+0 <= n1, n2 <= 10000
+Time Limit: 1 second
+Sample Input 1:
+4
+3
+1 5 9
+2
+45 90
+5
+2 6 78 100 234
+1
+0
+Sample Output 1:
+0 1 2 5 6 9 45 78 90 100 234
+================================================================================================================
+Running Median
+Send Feedback
+You are given a stream of 'N' integers. For every 'i-th' integer added to the running list of integers, print the resulting median.
+Print only the integer part of the median.
+Input Format :
+The first line of input contains an integer 'N', denoting the number of integers in the stream.
+
+The second line of input contains 'N' integers separated by a single space.
+Output Format :
+Print the running median for every integer added to the running list in one line (space-separated).
+Input Constraints
+0 <= N <= 10 ^ 5
+1 <= ARR[i] <= 10 ^ 5
+
+Time Limit: 1 sec
+Sample Input 1 :
+6
+6 2 1 3 7 5
+Sample Output 1 :
+6 4 2 2 3 4
+Explanation of Sample Output 1 :
+S = {6}, median = 6
+S = {6, 2} -> {2, 6}, median = 4
+S = {6, 2, 1} -> {1, 2, 6}, median = 2
+S = {6, 2, 1, 3} -> {1, 2, 3, 6}, median = 2
+S = {6, 2, 1, 3, 7} -> {1, 2, 3, 6, 7}, median = 3
+S = {6, 2, 1, 3, 7, 5} -> {1, 2, 3, 5, 6, 7}, median = 4
+Sample Input 2 :
+5
+5 4 3 2 1
+Sample Output 2 :
+5 4 4 3 3
+================================================================================================================
+Buy the ticket
+Send Feedback
+You want to buy a ticket for a well-known concert which is happening in your city. But the number of tickets available is limited. Hence the sponsors of the concert decided to sell tickets to customers based on some priority.
+A queue is maintained for buying the tickets and every person is attached with a priority (an integer, 1 being the lowest priority).
+The tickets are sold in the following manner -
+1. The first person (pi) in the queue requests for the ticket.
+2. If there is another person present in the queue who has higher priority than pi, then ask pi to move at end of the queue without giving him the ticket.
+3. Otherwise, give him the ticket (and don't make him stand in queue again).
+Giving a ticket to a person takes exactly 1 second and it takes no time for removing and adding a person to the queue. And you can assume that no new person joins the queue.
+Given a list of priorities of N persons standing in the queue and the index of your priority (indexing starts from 0). Find and return the time it will take until you get the ticket.
+Input Format:
+The first line of input contains an integer, that denotes the value of total number of people standing in queue or the size of the array of priorities. Let us denote it with the symbol N.
+The following line contains N space separated integers, that denote the value of the elements of the array of priorities.
+The following contains an integer, that denotes the value of index of your priority. Let us denote it with symbol k.
+Output Format :
+The first and only line of output contains the time required for you to get the ticket.
+Constraints:
+Time Limit: 1 sec
+Sample Input 1 :
+3
+3 9 4
+2
+Sample Output 1 :
+2
+Sample Output 1 Explanation :
+Person with priority 3 comes out. But there is a person with higher priority than him. So he goes and then stands in the queue at the end. Queue's status :  {9, 4, 3}. Time : 0 secs.
+Next, the person with priority 9 comes out. And there is no person with higher priority than him. So he'll get the ticket. Queue's status :  {4, 3}. Time : 1 secs.
+Next, the person with priority 4 comes out (which is you). And there is no person with higher priority than you. So you'll get the ticket. Time : 2 secs.
+Sample Input 2 :
+5
+2 3 2 2 4
+3
+Sample Output 2 :
+4

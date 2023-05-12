@@ -1,0 +1,87 @@
+Print the pattern
+Print the following pattern for the given number of rows.
+Pattern for N = 5
+ 1    2   3    4   5
+ 11   12  13   14  15
+ 21   22  23   24  25
+ 16   17  18   19  20
+ 6    7    8   9   10
+Input format : N (Total no. of rows)
+
+Output format : Pattern in N lines
+
+Sample Input :
+4
+Sample Output :
+ 1  2  3  4
+ 9 10 11 12
+13 14 15 16
+ 5  6  7  8
+================================================================================================================
+Print Matrix diagonally
+Given a matrix of integers, you need to print it diagonally. Thats is, if input is a 3 x 3 matrix, then order will be -
+(0, 0), (0, 1), (1, 0), (2, 0), (1, 1), (0, 2), (1, 2), (2, 1), (2, 2)
+For eg. if input is -
+ 1  2  3
+ 4  5  6
+ 7  8  9
+Output : 1 2 4 7 5 3 6 8 9.
+Input format :
+
+Line 1 : m (No. of rows) and n (No. of columns)
+
+Next m lines : Each row elements in different line
+
+Output format : Print elements in specified order, separated by space
+
+Sample Input :
+4 4
+ 1  2   3  10
+ 4  5   6  11
+ 7  8   9  12
+13 14  15  16
+Sample Output :
+1 2 4 7 5 3 10 6 8 13 14 9 11 12 15 16
+================================================================================================================
+Pangram
+A word or a sentence is called a pangram if all the characters of this language appear in it at least once. You are given a string s consisting of lowercase and uppercase Latin letters. Check whether this string is a pangram. Print "YES" or "NO".
+We say that the string contains a letter of the Latin alphabet, if this letter occurs in the string in either uppercase or in lowercase.
+Input format :
+Line 1 : n (Number of characters in string)
+Line 2 : Input string s
+Output format :
+YES or NO
+Constraints :
+1 <= n <= 100
+Sample Input 1 :
+12
+toosmallword
+Sample Output 1 :
+NO
+Sample Input 2 :
+35
+TheQuickBrownFoxJumpsOverTheLazyDog
+Sample Output 2 :
+YES
+================================================================================================================
+Two Substrings
+You are given a string S. Your task is to determine if the given string S contains two non-overlapping substrings "AB" and "BA" (the substrings can go in any order). Print "YES" or "NO".
+The string S contains uppercase Latin letters only.
+Input format :
+Line 1: String S
+Output format :
+YES or NO
+Constraints :
+1 <= n (Length of String s) <= 10^5
+Sample Input 1 :
+ABA
+Sample Output 1 :
+NO
+Sample Input 2 :
+BACFAB
+Sample Output 2 :
+YES
+Sample Input 3 :
+AXBYBXA
+Sample Output 3 :
+NO

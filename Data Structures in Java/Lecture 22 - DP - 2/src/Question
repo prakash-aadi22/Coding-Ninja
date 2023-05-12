@@ -1,0 +1,345 @@
+Code : Minimum Cost Path
+Send Feedback
+An integer matrix of size (M x N) has been given. Find out the minimum cost to reach from the cell (0, 0) to (M - 1, N - 1).
+From a cell (i, j), you can move in three directions:
+1. ((i + 1),  j) which is, "down"
+2. (i, (j + 1)) which is, "to the right"
+3. ((i+1), (j+1)) which is, "to the diagonal"
+The cost of a path is defined as the sum of each cell's values through which the route passes.
+ Input format :
+The first line of the test case contains two integer values, 'M' and 'N', separated by a single space. They represent the 'rows' and 'columns' respectively, for the two-dimensional array/list.
+
+The second line onwards, the next 'M' lines or rows represent the ith row values.
+
+Each of the ith row constitutes 'N' column values separated by a single space.
+Output format :
+Print the minimum cost to reach the destination.
+Constraints :
+1 <= M <= 10 ^ 2
+1 <= N <=  10 ^ 2
+
+Time Limit: 1 sec
+Sample Input 1 :
+3 4
+3 4 1 2
+2 1 8 9
+4 7 8 1
+Sample Output 1 :
+13
+Sample Input 2 :
+3 4
+10 6 9 0
+-23 8 9 90
+-200 0 89 200
+Sample Output 2 :
+76
+Sample Input 3 :
+5 6
+9 6 0 12 90 1
+2 7 8 5 78 6
+1 6 0 5 10 -4
+9 6 2 -10 7 4
+10 -2 0 5 5 7
+Sample Output 3 :
+18
+================================================================================================================
+LCS
+Send Feedback
+Given two strings, 'S' and 'T' with lengths 'M' and 'N', find the length of the 'Longest Common Subsequence'.
+For a string 'str'(per se) of length K, the subsequences are the strings containing characters in the same relative order as they are present in 'str,' but not necessarily contiguous. Subsequences contain all the strings of length varying from 0 to K.
+Example :
+Subsequences of string "abc" are:  ""(empty string), a, b, c, ab, bc, ac, abc.
+Input format :
+The first line of input contains the string 'S' of length 'M'.
+
+The second line of the input contains the string 'T' of length 'N'.
+Output format :
+Return the length of the Longest Common Subsequence.
+Constraints :
+0 <= M <= 10 ^ 3
+0 <= N <= 10 ^ 3
+
+Time Limit: 1 sec
+Sample Input 1 :
+adebc
+dcadb
+Sample Output 1 :
+3
+Explanation of the Sample Output 1 :
+Both the strings contain a common subsequence 'adb', which is the longest common subsequence with length 3.
+Sample Input 2 :
+ab
+defg
+Sample Output 2 :
+0
+Explanation of the Sample Output 2 :
+The only subsequence that is common to both the given strings is an empty string("") of length 0.
+================================================================================================================
+Code: Edit Distance
+Send Feedback
+Given two strings s and t of lengths m and n respectively, find the edit distance between the strings.
+Edit Distance
+Edit Distance of two strings is minimum number of operations required to make one string equal to other. In order to do so you can perform any of the following three operations only :
+1. Delete a character
+2. Replace a character with another one
+3. Insert a character
+Note
+Strings don't contain spaces
+Input Format :
+The first line of input contains a string, that denotes the value of s. The following line contains a string, that denotes the value of t.
+Output Format :
+The first and only line of output contains the edit distance value between the given strings.
+Constraints :
+1<= m,n <= 10
+Time Limit: 1 second
+Sample Input 1 :
+abc
+dc
+Sample Output 1 :
+2
+================================================================================================================
+Code: Edit Distance(Memoization and DP)
+Send Feedback
+You are given two strings S and T of lengths M and N, respectively. Find the 'Edit Distance' between the strings.
+Edit Distance of two strings is the minimum number of steps required to make one string equal to the other. In order to do so, you can perform the following three operations:
+1. Delete a character
+2. Replace a character with another one
+3. Insert a character
+Note :
+Strings don't contain spaces in between.
+ Input format :
+The first line of input contains the string S of length M.
+
+The second line of the input contains the String T of length N.
+Output format :
+Print the minimum 'Edit Distance' between the strings.
+Constraints :
+0 <= M <= 10 ^ 3
+0 <= N <= 10 ^ 3
+
+Time Limit: 1 sec
+Sample Input 1 :
+abc
+dc
+Sample Output 1 :
+2
+ Explanation to the Sample Input 1 :
+ In 2 operations we can make string T to look like string S.
+First, insert character 'a' to string T, which makes it "adc".
+
+And secondly, replace the character 'd' of string T with 'b' from the string S. This would make string T as "abc" which is also string S.
+
+Hence, the minimum distance.
+Sample Input 2 :
+whgtdwhgtdg
+aswcfg
+Sample Output 2 :
+9
+================================================================================================================
+Code: 0 1 Knapsack
+Send Feedback
+A thief robbing a store can carry a maximal weight of W into his knapsack. There are N items, and i-th item weigh 'Wi' and the value being 'Vi.' What would be the maximum value V, that the thief can steal?
+Input Format :
+The first line of the input contains an integer value N, which denotes the total number of items.
+
+The second line of input contains the N number of weights separated by a single space.
+
+The third line of input contains the N number of values separated by a single space.
+
+The fourth line of the input contains an integer value W, which denotes the maximum weight the thief can steal.
+Output Format :
+Print the maximum value of V that the thief can steal.
+Constraints :
+1 <= N <= 20
+1<= Wi <= 100
+1 <= Vi <= 100
+
+Time Limit: 1 sec
+Sample Input 1 :
+4
+1 2 4 5
+5 4 8 6
+5
+Sample Output 1 :
+13
+Sample Input 2 :
+5
+12 7 11 8 9
+24 13 23 15 16
+26
+Sample Output 2 :
+51
+================================================================================================================
+Code: Knapsack(Memoization and DP)
+Send Feedback
+A thief is robbing a store and can carry a maximal weight of W into his knapsack. There are N items and ith item weighs wi and is of value vi. Considering the constraints of maximum weight that knapsack can carry, you have to find and return the maximum value that thief can generate by stealing items.
+Note
+Space complexity should be O(W).
+Input Format :
+The first line contains an integers, that denote the value of N. The following line contains N space separated integers, that denote the values of weight of items. The following line contains N space separated integers, that denote the values associated with the items. The following line contains an integer that denote the value of W. W denotes maximum weight that thief can carry.
+Output Format :
+The first and only line of output contains the maximum value that thief can generate, as described in the task.
+Constraints
+1 <= N <= 10^4
+1<= wi <= 100
+1 <= vi <= 100
+Time Limit: 1 second
+Sample Input 1 :
+4
+1 2 4 5
+5 4 8 6
+5
+Sample Output 1 :
+13
+================================================================================================================
+Assignment
+----------------------------------------------------------------------------------------------------------
+Maximum Square Matrix With All Zeros
+Send Feedback
+Given an NxM matrix that contains only 0s and 1s, find out the size of the maximum square sub-matrix with all 0s. You need to return the size of the square matrix with all 0s.
+Input format :
+The first line of the test case contains two integer values, 'N' and 'M', separated by a single space. They represent the 'rows' and 'columns' respectively.
+
+Second-line onwards, the next 'N' lines or rows represent the ith row values.
+
+Each of the ith rows constitutes column values separated by a single space (Either 0 or 1).
+Output Format:
+Print the size of maximum square sub-matrix.
+ Constraints :
+0 <= N <= 10^4
+0 <= M <= 10^4
+
+Time Limit: 1 sec
+Sample Input 1:
+3 3
+1 1 0
+1 1 1
+1 1 1
+Sample Output 1:
+1
+Sample Input 2:
+4 4
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+Sample Output 2:
+4
+================================================================================================================
+Smallest Super-Sequence
+Send Feedback
+ Given two strings S and T with lengths M and N. Find and return the length of their shortest 'Super Sequence'.
+ The shortest 'Super Sequence' of two strings is defined as the smallest string possible that will have both the given strings as its subsequences.
+Note :
+If the two strings do not have any common characters, then return the sum of the lengths of the two strings.
+Input Format:
+The first only line of input contains a string, that denotes the value of string S. The following line contains a string, that denotes the value of string T.
+Output Format:
+Length of the smallest super-sequence of given two strings.
+Constraints :
+0 <= M <= 10 ^ 3
+0 <= N <= 10 ^ 3
+
+Time Limit: 1 sec
+Sample Input 1 :
+ab
+ac
+Sample Output 1 :
+3
+Explanation of Sample Output 1 :
+Their smallest super sequence can be "abc" which has length = 3.
+Sample Input 2 :
+pqqrpt
+qerepct
+Sample Output 2 :
+9
+================================================================================================================
+Magic Grid
+Send Feedback
+You are given a magic grid A with R rows and C columns. In the cells of the grid, you will either get magic juice, which increases your strength by |A[i][j]| points, or poison, which takes away |A[i][j]| strength points. If at any point of the journey, the strength points become less than or equal to zero, then you will die.
+You have to start from the top-left corner cell (1,1) and reach at the bottom-right corner cell (R,C). From a cell (i,j), you can only move either one cell down or right i.e., to cell (i+1,j) or cell (i,j+1) and you can not move outside the magic grid. You have to find the minimum number of strength points with which you will be able to reach the destination cell.
+Input format:
+The first line contains the number of test cases T. T cases follow. Each test case consists of R C in the first line followed by the description of the grid in R lines, each containing C integers. Rows are numbered 1 to R from top to bottom and columns are numbered 1 to C from left to right. Cells with A[i][j] < 0 contain poison, others contain magic juice.
+Output format:
+Output T lines, one for each case containing the minimum strength you should start with from the cell (1,1) to have a positive strength through out his journey to the cell (R,C).
+Constraints:
+1 ≤ T ≤ 5
+2 ≤ R, C ≤ 500
+-10^3 ≤ A[i][j] ≤ 10^3
+A[1][1] = A[R][C] = 0
+Time Limit: 1 second
+Sample Input 1:
+3
+2 3
+0 1 -3
+1 -2 0
+2 2
+0 1
+2 0
+3 4
+0 -2 -3 1
+-1 4 0 -2
+1 -2 -3 0
+Sample Output 1:
+2
+1
+2
+================================================================================================================
+Minimum Number of Chocolates
+Send Feedback
+Miss. Noor Rashid is a teacher. She wants to give some chocolates to the students in her class. All the students sit in a line, and each of them has a score according to performance. Noor wants to give at least one chocolate to each student. She distributes chocolates to them such that If two students sit next to each other, then the one with the higher score must get more chocolates. Miss. Noor wants to save money, so she wants to minimize the total number of chocolates.
+Note :
+When two students have an equal score, they are allowed to have a different number of chocolates.
+Input Format:
+The first line of the input contains an integer value of N. It denotes the total number of students in Noor's class.
+
+The second line of the input contains N integer values denoting the score of each of the students. A single space will separate them.
+Output Format:
+Print the minimum number of chocolates Noor must give.
+Constraints
+1 <= N <= 10^5
+1 <= score <= 10^5
+
+Time Limit: 1 sec
+Sample Input 1 :
+4
+1 4 4 6
+Sample Output 1 :
+6
+Explanation:
+One of the ways in which the chocolates can be distributed, such Noor has to give minimum number of chocolates, are: The first student can be given one chocolate, second student can be given two chocolates, third student can be one chocolate and fourth can be given two chocolates.
+Sample Input 2 :
+3
+8 7 5
+Sample Output 2 :
+6
+================================================================================================================
+Subset Sum
+Send Feedback
+You are given a set of N integers. You have to return true if there exists a subset that sum up to K, otherwise return false.
+Input Format
+The first line of the test case contains an integer 'N' representing the total elements in the set.
+
+The second line of the input contains N integers separated by a single space.
+
+The third line of the input contains a single integer, denoting the value of K.
+Output Format
+Output Yes if there exists a subset whose sum is k, else output No.
+Constraints :
+1 <= N <= 10^3
+1 <= a[i] <= 10^3, where a[i] denotes an element of the set
+1 <= K <= 10^3
+
+Time Limit: 1 sec
+Sample Input 1 :
+4
+4 3 5 2
+13
+Sample Output 1 :
+No
+Sample Input 2 :
+5
+4 2 5 6 7
+14
+Sample Output 2 :
+Yes

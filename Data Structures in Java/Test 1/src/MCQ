@@ -1,0 +1,30 @@
+Recurrence Relation for Tower of Hanoi Problem
+Send Feedback
+The recurrence relation capturing the optimal execution time of the Towers of Hanoi problem with n discs is :
+Options
+This problem may have one or more correct answers
+T(n) = 2T(n − 2) + 2
+T(n) = 2T(n − 1) + n
+T(n) = 2T(n/2) + 1
+T(n) = 2T(n − 1) + 1 --> Answer
+===============================================================================================================
+Complexity of different operations in a sorted array.
+Send Feedback
+Which of the following operations is not O(1) for an array of sorted data. You may assume that array elements are distinct.
+Options
+This problem may have one or more correct answers
+Find the ith largest element
+Delete an element --> Answer
+Find the ith smallest element
+All of the above
+===============================================================================================================
+Complexity of a Recurrence Relation
+Send Feedback
+Which one of the following correctly determines the solution of the recurrence relation with T(1) = 1?
+T(n) = 2T(n/2) + log(n)
+Options
+This problem may have one or more correct answers
+O(N) --> Answer
+O(NlogN)
+O(N^2)
+O(log N)

@@ -1,0 +1,324 @@
+Replace Character Recursively
+Send Feedback
+Given an input string S and two characters c1 and c2, you need to replace every occurrence of character c1 with character c2 in the given string.
+Do this recursively.
+Input Format :
+Line 1 : Input String S
+Line 2 : Character c1 and c2 (separated by space)
+Output Format :
+Updated string
+Constraints :
+1 <= Length of String S <= 10^6
+Sample Input :
+abacd
+a x
+Sample Output :
+xbxcd
+===================================================================================================================
+Remove Duplicates Recursively
+Send Feedback
+Given a string S, remove consecutive duplicates from it recursively.
+Input Format :
+String S
+Output Format :
+Output string
+Constraints :
+1 <= |S| <= 10^3
+where |S| represents the length of string
+Sample Input 1 :
+aabccba
+Sample Output 1 :
+abcba
+Sample Input 2 :
+xxxyyyzwwzzz
+Sample Output 2 :
+xyzwz
+===================================================================================================================
+Merge Sort Code
+Send Feedback
+Sort an array A using Merge Sort.
+Change in the input array itself. So no need to return or print anything.
+Input format :
+Line 1 : Integer n i.e. Array size
+Line 2 : Array elements (separated by space)
+Output format :
+Array elements in increasing order (separated by space)
+Constraints :
+1 <= n <= 10^3
+Sample Input 1 :
+6
+2 6 8 5 4 3
+Sample Output 1 :
+2 3 4 5 6 8
+Sample Input 2 :
+5
+2 1 5 2 3
+Sample Output 2 :
+1 2 2 3 5
+===================================================================================================================
+Quick Sort Code
+Send Feedback
+Sort an array A using Quick Sort.
+Change in the input array itself. So no need to return or print anything.
+
+
+Input format :
+Line 1 : Integer n i.e. Array size
+Line 2 : Array elements (separated by space)
+Output format :
+Array elements in increasing order (separated by space)
+Constraints :
+1 <= n <= 10^3
+Sample Input 1 :
+6
+2 6 8 5 4 3
+Sample Output 1 :
+2 3 4 5 6 8
+Sample Input 2 :
+5
+1 5 2 7 3
+Sample Output 2 :
+1 2 3 5 7
+===================================================================================================================
+Return Keypad Code
+Send Feedback
+Given an integer n, using phone keypad find out all the possible strings that can be made using digits of input n.
+Return empty string for numbers 0 and 1.
+Note : 1. The order of strings are not important.
+2. Input and output has already been managed for you. You just have to populate the output array and return the count of elements populated in the output array.
+Input Format :
+Integer n
+Output Format :
+All possible strings in different lines
+Constraints :
+1 <= n <= 10^6
+Sample Input:
+23
+Sample Output:
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+===================================================================================================================
+Print Keypad Combinations Code
+Send Feedback
+Given an integer n, using phone keypad find out and print all the possible strings that can be made using digits of input n.
+Note : The order of strings are not important. Just print different strings in new lines.
+Input Format :
+Integer n
+Output Format :
+All possible strings in different lines
+Constraints :
+1 <= n <= 10^6
+Sample Input:
+23
+Sample Output:
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+===================================================================================================================
+Binary Search
+Send Feedback
+Given an integer sorted array (sorted in increasing order) and an element x, find the x in given array using binary search. Return the index of x.
+Return -1 if x is not present in the given array.
+Note : If given array size is even, take first mid.
+Input format :
+
+Line 1 : Array size
+
+Line 2 : Array elements (separated by space)
+
+Line 3 : x (element to be searched)
+
+Sample Input :
+6
+2 3 4 5 6 8
+5
+Sample Output:
+3
+===================================================================================================================
+Tower of Hanoi
+Send Feedback
+Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move all disks from source rod to destination rod using third rod (say auxiliary). The rules are :
+1) Only one disk can be moved at a time.
+2) A disk can be moved only if it is on the top of a rod.
+3) No disk can be placed on the top of a smaller disk.
+Print the steps required to move n disks from source rod to destination rod.
+Source Rod is named as 'a', auxiliary rod as 'b' and destination rod as 'c'.
+Input Format :
+Integer n
+Output Format :
+Steps in different lines (in one line print source and destination rod name separated by space)
+Constraints :
+0 <= n <= 20
+Sample Input 1 :
+2
+Sample Output 1 :
+a b
+a c
+b c
+Sample Input 2 :
+3
+Sample Output 2 :
+a c
+a b
+c b
+a c
+b a
+b c
+a c
+===================================================================================================================
+Assignment
+---------------------------------------------------------------------------------------------------------
+Check AB
+Send Feedback
+Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive function that checks if the string was generated using the following rules:
+a. The string begins with an 'a'
+b. Each 'a' is followed by nothing or an 'a' or "bb"
+c. Each "bb" is followed by nothing or an 'a'
+If all the rules are followed by the given string, return true otherwise return false.
+Input format :
+String S
+Output format :
+'true' or 'false'
+Constraints :
+1 <= |S| <= 1000
+where |S| represents length of string S.
+Sample Input 1 :
+abb
+Sample Output 1 :
+true
+Sample Input 2 :
+abababa
+Sample Output 2 :
+false
+Explanation for Sample Input 2
+In the above example, a is not followed by either "a" or "bb", instead it's followed by "b" which results in false to be returned.
+==============================================================================================================
+Staircase
+Send Feedback
+A child is running up a staircase with N steps, and can hop either 1 step, 2 steps or 3 steps at a time. Implement a method to count how many possible ways the child can run up to the stairs. You need to return number of possible ways W.
+Input format :
+Integer N
+Output Format :
+Integer W
+Constraints :
+1 <= N <= 30
+Sample Input 1 :
+4
+Sample Output 1 :
+7
+Sample Input 2 :
+5
+Sample Output 2 :
+13
+==============================================================================================================
+Binary Search (Recursive)
+Send Feedback
+Given an integer sorted array (sorted in increasing order) and an element x, find the x in given array using binary search. Return the index of x.
+Return -1 if x is not present in the given array.
+Note : If given array size is even, take first mid.
+Input format :
+
+Line 1 : Array size
+
+Line 2 : Array elements (separated by space)
+
+Line 3 : x (element to be searched)
+
+Sample Input :
+6
+2 3 4 5 6 8
+5
+Sample Output:
+3
+==============================================================================================================
+Return subset of an array
+Send Feedback
+Given an integer array (of length n), find and return all the subsets of input array.
+Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
+Note : The order of subsets are not important.
+Input format :
+
+Line 1 : Size of array
+
+Line 2 : Array elements (separated by space)
+
+Sample Input:
+3
+15 20 12
+Sample Output:
+[] (this just represents an empty array, don't worry about the square brackets)
+12
+20
+20 12
+15
+15 12
+15 20
+15 20 12
+==============================================================================================================
+Return subsets sum to K
+Send Feedback
+Given an array A of size n and an integer K, return all subsets of A which sum to K.
+Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
+Note : The order of subsets are not important.
+Input format :
+Line 1 : Integer n, Size of input array
+Line 2 : Array elements separated by space
+Line 3 : K
+Constraints :
+1 <= n <= 20
+Sample Input :
+9
+5 12 3 17 1 18 15 3 17
+6
+Sample Output :
+3 3
+5 1
+==============================================================================================================
+Return all codes - String
+Send Feedback
+Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are given a numeric string S. Write a program to return the list of all possible codes that can be generated from the given string.
+Note : The order of codes are not important. And input string does not contain 0s.
+Input format :
+A numeric string
+Constraints :
+1 <= Length of String S <= 10
+Sample Input:
+1123
+Sample Output:
+aabc
+kbc
+alc
+aaw
+kw
+==============================================================================================================
+Return Permutations - String
+Send Feedback
+Given a string S, find and return all the possible permutations of the input string.
+Note 1 : The order of permutations is not important.
+Note 2 : If original string contains duplicate characters, permutations will also be duplicates.
+Input Format :
+String S
+Output Format :
+All permutations (in different lines)
+Sample Input :
+abc
+Sample Output :
+abc
+acb
+bac
+bca
+cab
+cba

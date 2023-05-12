@@ -1,0 +1,220 @@
+Find the time complexity
+Find the time complexity of following pseudo code:
+func(int n)
+lv=1, an_v=1
+while(lv <= n)
+    an_v++
+    lv+=an_v
+    print(“*”)
+
+    Options
+    This problem has only one correct answer
+    O(n)
+    O(sqrt(n)) <-----------
+    O(1)
+    O(log n)
+================================================================================================================
+Find the time complexity
+Find the time complexity of following pseudo code:
+int func(int n)
+    count=0
+    lv=n
+    while(lv > 0)
+        inner_lv=0
+        while(inner_lv < lv)
+            inner_lv++
+            count+=1
+        lv/=2
+
+return count
+
+
+Options
+This problem has only one correct answer
+O(n) <-----------------------------
+O(n log(n))
+O(1)
+O(log n)
+================================================================================================================
+Predict the output
+What will be the output of the following code?
+class ThrowsExecp {
+static int fun(int n) throws Exception
+{   if(n==2)
+    throw new Exception();
+    else
+    return 5;
+}
+public static void main(String args[])
+{
+    try {
+        System.out.print(fun(10));
+    }
+    catch (Exception e) {
+        System.out.print("hello");
+    }
+    System.out.print("world");
+}
+}
+
+Options
+This problem has only one correct answer
+helloworld
+world
+5helloworld
+5world <--------------
+================================================================================================================
+Modulo product
+Ninja got an easy assignment from his professor but he is unable to solve this. So he needs your help to complete the assignment.
+In the assignment, he is given two integers A and B and he needs to output the product of all numbers from 1 to A modulo B, where 1 and A are inclusive.
+For example, if A=5 and B=7, the answer will be ( 1 * 2 * 3 * 4 * 5 ) % 7 = 1 so the final answer is 1.
+Input format:
+The first line of input will contain an integer T, that denote the number of test cases.
+Every test case will consist of one single line and that line will contain two integers: A and B.
+Constraints:
+1<=T<=50
+1<=A<=10^9
+1<=B<=10^5
+Time Limit: 1 second
+Output format:
+For every test case, print the output in a newline.
+Sample Input 1
+4
+8 10
+5 140
+18 19
+20 21
+Sample Output 1:
+0
+120
+18
+0
+================================================================================================================
+Room arrangements
+This year politicians and economists have been invited to participate in Stanford Institute for Theoretical Economics (SITE 2021) conference as guests. You have to accommodate them in r rooms such that-
+No room may remain empty.
+A room may contain either only politicians or only economists, not both.
+No economists are allowed to stay alone in a room.
+Find the number of ways to place them. Note though, that all the rooms are identical. But each of the economists and politicians are unique.
+Since the number of ways can be very large, print the answer modulo 998,244,353.
+Input Format:
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first and only line of each test case contains three space-separated integers p, q and r denoting the number of politicians, economists and rooms.
+Output Format:
+For each test case, output the number of ways to place them modulo 998,244,353.
+Constraints
+1≤T≤100
+1≤p,q,r≤100
+Sample Input:
+4
+2 1 4
+2 4 4
+2 5 4
+2 8 4
+Sample Output:
+0
+3
+10
+609
+Explanation:
+ Test case 1: 4 rooms and 3 people. A room would remain empty.
+ Test case 2: There are 4 rooms and 6 people. There are 3 possible ways to distribute these 6 people in 3 rooms.
+
+{Politician 1}, {Politician 2}, {Economist 1, Economist 2}, {Economist 3, Economist 4}
+{Politician 1}, {Politician 2}, {Economist 1, Economist 3}, {Economist 2, Economist 4}
+{Politician 1}, {Politician 2}, {Economist 1, Economist 4}, {Economist 2, Economist 3}
+ Please note that the rooms are identical.
+================================================================================================================
+Binary strings with no consecutive 1s.
+You have been given an integer K.
+Your task is to generate all binary strings of length K such that there are no consecutive 1s in the string. This means that the binary string should not contain any instance of 1’s coming one after another.
+A binary string is that string which contains only ‘0’ and ‘1’.
+For Example:
+Let ‘K=3’, hence the length of the binary string would be 3. We can have the following binary strings with no consecutive 1s:
+000 001 010 100 101
+Note
+1. Each string must be a binary string.
+2. There should be no consecutive ‘1’ in the string.
+3. Return an array/sequence of all the strings in an array in a lexicographically increasing order.
+Input format:
+The first line of input contains ‘T’ the number of test cases.
+
+The first and only line of each test case contains a single integer K denoting the length of the binary string to be generated.
+Output Format
+For each test case, print all possible binary strings without consecutive ‘1’ of the length K in lexicographically increasing order.
+Note:
+You don't need to print anything; it has already been taken care of. Just implement the given function.
+Constraints:
+1 <= T <= 10
+0 <= K <= 22
+
+Time limit: 1 second
+Sample Input 1:
+2
+4
+3
+Sample Output 1:
+0000 0001 0010 0100 0101 1000 1001 1010
+000 001 010 100 101
+Explanation of sample input 1:
+Test case 1:
+
+For K = 4 we get the following Strings:
+
+0000 0001 0010 0100 0101 1000 1001 1010
+
+Note that none of the strings has consecutive 1s. Also, note that they are in a lexicographically increasing order.
+
+Test case 2:
+
+We can see that for K = 3 we get the following Strings:
+
+000 001 010 100 101
+
+Note that none of the strings has consecutive 1s. Also, note that they are in a lexicographically increasing order.
+Sample Input 2:
+2
+2
+5
+Sample Output 2:
+00 01 10
+00000 00001 00010 00100 00101 01000 01001 01010 10000 10001 10010 10100 10101
+================================================================================================================
+Maximum Subarray Sum
+You are given an array (ARR) of length N, consisting of integers. You have to find the sum of the subarray (including empty subarray) having maximum sum among all subarrays.
+A subarray is a contiguous segment of an array. In other words, a subarray can be formed by removing 0 or more integers from the beginning, and 0 or more integers from the end of an array.
+Note :
+The sum of an empty subarray is 0.
+Input Format :
+The first line of input contains an integer N, representing the length of the array.
+
+The second line of input contains N single space-separated integers, denoting the elements of the array.
+Output Format :
+In the only output line, output the maximum subarray sum.
+Note :
+You are not required to print the output explicitly, it has already been taken care of. Just implement the function.
+Constraints :
+1 <= N <= 10^6
+-10^6 <= A[i] <= 10^6
+
+where N is the length of the array.
+A[i] represents the numbers present in the array.
+
+Time limit: 1sec
+Sample Input 1 :
+9
+1 2 7 -4 3 2 -10 9 1
+Sample Output 1 :
+11
+Explanation for Sample 1 :
+The subarray yielding maximum sum is [1, 2, 7, -4, 3, 2].
+Sample Input 2 :
+6
+10 20 -30 40 -50 60
+Sample Input 2 :
+60
+Sample Input 3 :
+3
+-3 -5 -6
+Sample Input 3 :
+0
